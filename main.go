@@ -5,8 +5,8 @@ import "strconv"
 import "fmt"
 import "crypto/rsa"
 import "crypto/rand"
-import "github.com/google/go-querystring/query"
-import "github.com/google/go-github/v29/github"
+// import "github.com/google/go-querystring/query"
+// import "github.com/google/go-github/v29/github"
 import "gopkg.in/square/go-jose.v2"
 
 type Options struct {
