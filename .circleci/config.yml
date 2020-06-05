@@ -10,4 +10,4 @@ jobs:
       - run:
           name: install-go
           command: |
-            go build go.mod
+            ls
