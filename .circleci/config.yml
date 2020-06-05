@@ -3,11 +3,12 @@ jobs:
   build:
     working_directory: ~/example-go-circle
     docker:
-      - image: lfirek/golang-java
+      - image: codequest/ruby-golang-java-nodejs
 
     steps:
       - checkout            
       - run:
           name: install-go
           command: |
-            ls
+            go install 
+            go list -m all
