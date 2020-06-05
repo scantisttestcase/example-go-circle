@@ -9,5 +9,4 @@ jobs:
       - run:
           name: install-go
           command: |
-            go build
-            go list
+            go list -m all
