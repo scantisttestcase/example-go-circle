@@ -11,4 +11,4 @@ jobs:
           name: install-go
           command: |
             go version
-            go install go.mod
+            go install ~/go.mod
