@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: timbru31/java-node
+      - image: lfirek/golang-java
 
     steps:
       - checkout            
