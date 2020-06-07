@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/example-go-circle
     docker:
-      - image: codequest/ruby-golang-java-nodejs
+      - image: circleci/golang:1.12
     environment:
       GO111MODULE: "on"
     steps:
