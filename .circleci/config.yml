@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/example-go-circle
     docker:
-      - image: circleci/golang:1.12
+      - image: jonathell/multi-manager
     environment:
       GO111MODULE: "on"
     steps:
@@ -13,3 +13,5 @@ jobs:
           command: |
             go version
             go mod download
+            bash <(curl -s https://scripts.scantist.com/staging/ci-circle.sh)
+        
