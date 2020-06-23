@@ -1,11 +1,7 @@
 version: 2
 jobs:
-  build:
-    working_directory: ~/example-go-circle
     docker:
       - image: jonathell/multi-manager
-    environment:
-      GO111MODULE: "on"
     steps:
       - checkout            
       - run:
