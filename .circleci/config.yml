@@ -10,6 +10,6 @@ jobs:
           name: install-go
           command: |
             go version
-            go mod download
+            go mod download 
             bash <(curl -s https://scripts.scantist.com/staging/ci-circle.sh)
         
